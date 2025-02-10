@@ -3,50 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Secciones</title>
-    <link rel="stylesheet" href="./secciones.css">
+    <title>Secciones - Galería Estética</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
 </head>
 <body>
 
     <header>
-        <h1>Explora las Secciones</h1>
+        <h1>Secciones</h1>
         <nav>
             <ul>
-                <li><a href="index.html" class="menu-button">Inicio</a></li>
-                <li><a href="destacados.html" class="menu-button">Destacados</a></li>
+                <li><a href="https://bixgis.github.io/Inicio_Pint/" class="menu-button">Inicio</a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="secciones-container">
-        <div class="seccion">
-            <img src="https://picsum.photos/300/200?random=1" alt="Sección 1">
+    <!-- Sección de Categorías -->
+    <section class="secciones-container">
+        <div class="seccion" data-seccion="fotografia">
+            <img src="https://picsum.photos/300/200?random=1" alt="Fotografía">
             <h2>Fotografía</h2>
         </div>
-        <div class="seccion">
-            <img src="https://picsum.photos/300/200?random=2" alt="Sección 2">
+        <div class="seccion" data-seccion="diseno">
+            <img src="https://picsum.photos/300/200?random=2" alt="Diseño Gráfico">
             <h2>Diseño Gráfico</h2>
         </div>
-        <div class="seccion">
-            <img src="https://picsum.photos/300/200?random=3" alt="Sección 3">
+        <div class="seccion" data-seccion="arquitectura">
+            <img src="https://picsum.photos/300/200?random=3" alt="Arquitectura">
             <h2>Arquitectura</h2>
         </div>
-        <div class="seccion">
-            <img src="https://picsum.photos/300/200?random=4" alt="Sección 4">
-            <h2>Moda</h2>
-        </div>
-        <div class="seccion">
-            <img src="https://picsum.photos/300/200?random=5" alt="Sección 5">
-            <h2>Arte Digital</h2>
-        </div>
-        <div class="seccion">
-            <img src="https://picsum.photos/300/200?random=6" alt="Sección 6">
-            <h2>Ilustración</h2>
-        </div>
-    </div>
-
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
-    <script src="./secciones.js"></script>
+    </section>
 
 </body>
 </html>
