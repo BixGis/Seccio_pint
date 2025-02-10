@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Secciones - Galería Estética</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="scripts.js"></script>
+    <link rel="stylesheet" href="secciones.css">
+    <script defer src="secciones.js"></script>
 </head>
 <body>
 
@@ -14,25 +14,76 @@
         <nav>
             <ul>
                 <li><a href="https://bixgis.github.io/Inicio_Pint/" class="menu-button">Inicio</a></li>
+                <li><a href="destacados.html" class="menu-button">Destacados</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Sección de Categorías -->
+    <!-- Secciones -->
     <section class="secciones-container">
-        <div class="seccion" data-seccion="fotografia">
-            <img src="https://picsum.photos/300/200?random=1" alt="Fotografía">
-            <h2>Fotografía</h2>
+        <div class="seccion-card" data-seccion="arte">
+            <img src="https://picsum.photos/400/500?random=21" alt="Arte">
+            <div class="overlay">
+                <h2>Arte</h2>
+                <div class="icons">
+                    <span class="icon-heart">&#10084;</span>
+                    <span class="icon-comment">&#128172;</span>
+                </div>
+            </div>
         </div>
-        <div class="seccion" data-seccion="diseno">
-            <img src="https://picsum.photos/300/200?random=2" alt="Diseño Gráfico">
-            <h2>Diseño Gráfico</h2>
+
+        <div class="seccion-card grande" data-seccion="fotografia">
+            <img src="https://picsum.photos/500/600?random=22" alt="Fotografía">
+            <div class="overlay">
+                <h2>Fotografía</h2>
+                <div class="icons">
+                    <span class="icon-heart">&#10084;</span>
+                    <span class="icon-comment">&#128172;</span>
+                </div>
+            </div>
         </div>
-        <div class="seccion" data-seccion="arquitectura">
-            <img src="https://picsum.photos/300/200?random=3" alt="Arquitectura">
-            <h2>Arquitectura</h2>
+
+        <div class="seccion-card" data-seccion="moda">
+            <img src="https://picsum.photos/400/500?random=23" alt="Moda">
+            <div class="overlay">
+                <h2>Moda</h2>
+                <div class="icons">
+                    <span class="icon-heart">&#10084;</span>
+                    <span class="icon-comment">&#128172;</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="seccion-card grande" data-seccion="arquitectura">
+            <img src="https://picsum.photos/500/700?random=24" alt="Arquitectura">
+            <div class="overlay">
+                <h2>Arquitectura</h2>
+                <div class="icons">
+                    <span class="icon-heart">&#10084;</span>
+                    <span class="icon-comment">&#128172;</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="seccion-card" data-seccion="tecnologia">
+            <img src="https://picsum.photos/400/500?random=25" alt="Tecnología">
+            <div class="overlay">
+                <h2>Tecnología</h2>
+                <div class="icons">
+                    <span class="icon-heart">&#10084;</span>
+                    <span class="icon-comment">&#128172;</span>
+                </div>
+            </div>
         </div>
     </section>
+    <div id="comment-box" class="comment-box">
+        <textarea id="textarea" placeholder="Escribe tu comentario aquí..."></textarea>
+        <button onclick="submitComment()">Enviar</button>
+        <span class="close" onclick="closeCommentBox()">X</span>
+    </div>
+
+    <!-- Corazon -->
+    <div id="hearts-container" class="hearts-container"></div>
 
 </body>
 </html>
